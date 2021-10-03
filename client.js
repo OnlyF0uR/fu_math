@@ -17,12 +17,11 @@ function FormatMiliseconds(ms) {
 }
 
 // ===========================================
-// Uh came from the original es_extended, some esx things use it. Although bloody useless if you ask me
-function GroupDigits(number) {
-    return number.toLocaleString()
+// Some math to get distance between different vectors (private)
+function GetDistance(a, b) {
+    return Math.sqrt((a.x - b.x)**2 + (a.y - b.y)**2)
 }
 
-// ===========================================
 // Check weather a certain vector3 (c) is somewhere between a abd b which are also vector3's
 function IsBetween(a, b, c) {
     a = JSON.parse(a)
