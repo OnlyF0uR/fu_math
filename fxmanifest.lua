@@ -7,7 +7,6 @@ server_script 'server.js'
 exports {
     'GetTimeInMiliseconds',
     'FormatMiliseconds',
-    'GroupDigits',
     'IsBetween'
 }
 
